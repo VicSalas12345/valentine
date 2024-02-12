@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta htttp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+    <style>
+        .body {
+            background-color:crimson ;
+            text-align: center;
+
+        }
+        .body_title{
+            color: white;
+        }
+
+        .body__img{
+            width: 30%;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body_title">❤️Hola Fernandaaaaa ¿Quieres ser mi San Valentine?❤️</h1>
+    <img
+    src="https://i.pinimg.com/originals/3c/e8/84/3ce884bb29ad1909a2c253354497420f.gif" 
+    alt="Foto gato" class="body__img"/>
+    <button id="yes">🥰SI🥰</button>
+    <button id="no">😭NO😭</button>
+
+    <script>
+        const vuttonSi=document.getElementById("yes");
+        const vuttonNo=document.getElementById("no");
+
+        const ACEPTO = () => {
+            alert ('Gracias por aceptaaaaaar, Te quiero muchoooooo❤️❤️❤️❤️')
+            alert ('Nuestra cita sera el sabado😱😱😱')
+            location.href= 'https://www.youtube.com/watch?v=am1_JLFDFMw=19s';
+
+        }
+
+        const SIPONESNOMEMATO = () =>{
+            vuttonNo.style.position='absolute';
+            vuttonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            vuttonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        }
+
+        vuttonSi.addEventListener('click', ACEPTO);
+        vuttonNo.addEventListener('mouseover',SIPONESNOMEMATO);
+    </script>
+</body>
+
+</html>
